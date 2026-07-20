@@ -90,8 +90,8 @@ export default {
         return {
             loaded: false,
             thong_ke: {
-                tu_nam: '',
-                den_nam: ''
+                tu_nam: '2018',
+                den_nam: '2023'
             },
             list_data: [],
             chartData: {
