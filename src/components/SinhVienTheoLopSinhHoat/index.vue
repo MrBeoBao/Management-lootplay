@@ -8,9 +8,11 @@
                             <div class="col-lg-12">
                                 <select class="form-select" aria-label="Default select example">
                                     <option selected>Chọn khoa</option>
-                                    <option value="1">Công Nghệ Thông tin</option>
-                                    <option value="2">Y dược</option>
-                                    <option value="3">Điện-điện tử</option>
+                                    <option value="K001">Công Nghệ Thông tin</option>
+                                    <option value="K002">Y dược</option>
+                                    <option value="K003">Điện-điện tử</option>
+                                    <option value="K004">Y Dược</option>
+                                    <option value="K005">Quản Trị Kinh Doanh</option>
                                 </select>
                             </div>
                         </div>
