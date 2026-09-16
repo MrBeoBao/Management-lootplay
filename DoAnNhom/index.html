@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="vi">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>LootPlay - Game & Entertainment</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand logo" href="#home">Loot<span>Play</span></a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu" aria-label="Menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarMenu">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <li class="nav-item"><a class="nav-link" href="#home">TRANG CHỦ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#games">GAMES</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#movies">PHIM</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#software">PHẦN MỀM</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#forum">DIỄN ĐÀN</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#faqs">FAQS</a></li>
+                </ul>
+
+                <button class="btn btn-primary rounded-circle search-btn" id="searchButton" type="button" aria-label="Tìm kiếm">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero" id="home">
+        <div class="container hero-content">
+            <h1>LootPlay</h1>
+            <p>Cộng đồng chia sẻ game, giải trí và kiến thức công nghệ.</p>
+            <h5>"PLAY MORE. DISCOVER MORE."</h5>
+        </div>
+    </section>
+
+    <section class="container section-wrap" id="games">
+        <div class="section-shell">
+            <div class="card-header bg-white">
+                <ul class="nav nav-tabs card-header-tabs">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#games" data-tab="game-new">
+                            <i class="fa-solid fa-gamepad"></i> Game mới
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#top-games" data-tab="top-games">
+                            <i class="fa-solid fa-fire"></i> TOP game hay
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#updates" data-tab="updates">
+                            <i class="fa-solid fa-arrow-up"></i> Update
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="card-body">
+                <div class="row g-3">
+                    <div class="col-lg-6">
+                        <article class="card h-100 feature-card">
+                            <div class="game-image anime">🎮</div>
+                            <div class="card-body">
+                                <span class="badge bg-primary">Multiplayer</span>
+                                <h4 class="mt-3">Anime Shop Simulator</h4>
+                                <p class="text-secondary">Life Sim, Phiêu lưu, Mô phỏng, Thẻ bài</p>
+                                <p>Trở thành người quản lý cửa hàng anime của riêng bạn.</p>
+                                <a href="#" class="btn btn-primary">Xem chi tiết</a>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <article class="card h-100">
+                            <div class="game-image elderfield">🎲</div>
+                            <div class="card-body">
+                                <h5>Welcome to Elderfield</h5>
+                                <p class="text-secondary">Phiêu lưu, Nhập vai, Indie</p>
+                                <a href="#" class="btn btn-outline-primary">Xem thêm</a>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <article class="card h-100">
+                            <div class="game-image shroom">👾</div>
+                            <div class="card-body">
+                                <h5>Shroom and Gloom</h5>
+                                <p class="text-secondary">Phiêu lưu, Indie, Thẻ bài</p>
+                                <a href="#" class="btn btn-outline-primary">Xem thêm</a>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <article class="card h-100">
+                            <div class="game-image gunman">🔫</div>
+                            <div class="card-body">
+                                <h5>Gunman Contracts</h5>
+                                <p class="text-secondary">Hành động, Bắn súng</p>
+                                <a href="#" class="btn btn-outline-primary">Xem thêm</a>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <article class="card h-100">
+                            <div class="game-image shady">🕹️</div>
+                            <div class="card-body">
+                                <h5>Shady Job</h5>
+                                <p class="text-secondary">Hành động, Indie, Hài hước</p>
+                                <a href="#" class="btn btn-outline-primary">Xem thêm</a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container section-wrap mb-5" id="movies">
+        <div class="section-shell">
+            <div class="card-header bg-white">
+                <ul class="nav nav-tabs card-header-tabs">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#movies" data-tab="movie-new">
+                            <i class="fa-solid fa-film"></i> Phim mới
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#top-movies" data-tab="top-movies">
+                            <i class="fa-solid fa-fire"></i> TOP phim hay
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#movie-updates" data-tab="movie-updates">
+                            <i class="fa-solid fa-arrow-up"></i> Update
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="card-body">
+                <div class="row g-3">
+                    <div class="col-lg-3 col-md-6">
+                        <article class="card h-100">
+                            <div class="movie-image">🎬</div>
+                            <div class="card-body">
+                                <h5>Bad Boys For Life</h5>
+                                <p class="text-secondary">Những Gã Trai Hư Trọn Đời</p>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <article class="card h-100">
+                            <div class="movie-image">🏴‍☠️</div>
+                            <div class="card-body">
+                                <h5>One Piece</h5>
+                                <p class="text-secondary">Đảo Hải Tặc</p>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <article class="card h-100">
+                            <div class="movie-image">⚔️</div>
+                            <div class="card-body">
+                                <h5>Star Wars</h5>
+                                <p class="text-secondary">Chiến Tranh Giữa Các Vì Sao</p>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <article class="card h-100">
+                            <div class="movie-image">🥋</div>
+                            <div class="card-body">
+                                <h5>Ip Man 4</h5>
+                                <p class="text-secondary">Diệp Vấn 4: Hồi Cuối</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer" id="forum">
+        <div class="container">
+            <div class="row g-4 py-5">
+                <div class="col-lg-5">
+                    <h2 class="logo">Loot<span>Play</span></h2>
+                    <p class="text-secondary">Cộng đồng chia sẻ nội dung, kiến thức hữu ích về game và giải trí.</p>
+                </div>
+
+                <div class="col-lg-3">
+                    <h5>Liên kết</h5>
+                    <p><a href="#home">Trang chủ</a></p>
+                    <p><a href="#games">Games</a></p>
+                    <p><a href="#movies">Phim</a></p>
+                    <p><a href="#software">Phần mềm</a></p>
+                </div>
+
+                <div class="col-lg-4">
+                    <h5>Mạng xã hội</h5>
+                    <p class="text-secondary">Theo dõi LootPlay để cập nhật thông tin mới nhất.</p>
+                    <a href="#" class="btn btn-primary rounded-circle social-btn"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="btn btn-danger rounded-circle social-btn"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#" class="btn btn-info rounded-circle social-btn"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+            </div>
+
+            <hr>
+            <p class="text-center text-secondary mb-0 pb-3">© 2026 LootPlay. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
