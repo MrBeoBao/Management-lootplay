@@ -1,62 +1,152 @@
 <template>
-	<div class="nav-container primary-menu">
-		<div class="mobile-topbar-header">
-			<div>
-				<img src="../../assets/images/logo-icon.png" class="logo-icon" alt="logo icon">
-			</div>
-			<div>
-				<h4 class="logo-text">Rukada</h4>
-			</div>
-			<div class="toggle-icon ms-auto"><i class='bx bx-arrow-to-left'></i>
-			</div>
-		</div>
-		<nav class="navbar navbar-expand-xl w-100">
-			<ul class="navbar-nav justify-content-start flex-grow-1 gap-1">
-				<li class="nav-item dropdown">
-					<a href="javascript:;" class="nav-link dropdown-toggle dropdown-toggle-nocaret"
-						data-bs-toggle="dropdown">
-						<div class="parent-icon"><i class='bx bx-home-circle'></i>
-						</div>
-						<div class="menu-title">Dashboard</div>
-					</a>
-					<ul class="dropdown-menu">
-						<li> <a class="dropdown-item" href="index.html"><i class="bx bx-right-arrow-alt"></i>Default</a>
-						</li>
-						<li> <a class="dropdown-item" href="index2.html"><i
-									class="bx bx-right-arrow-alt"></i>Alternate</a>
-						</li>
-						<li> <a class="dropdown-item" href="index3.html"><i
-									class="bx bx-right-arrow-alt"></i>Graphical</a>
-						</li>
-					</ul>
-				</li>
+    <div class="menu-container">
 
-				<li class="nav-item">
-					<router-link class="nav-link" to="/sinh-vien-theo-khoa">
-						<div class="parent-icon"><i class="bx bx-cookie"></i></div>
-						<div class="menu-title">Thống kê theo Khoa</div>
-					</router-link>
-				</li>
-				<li class="nav-item">
-					<router-link class="nav-link" to="/sinh-vien-theo-lop-sinh-hoat">
-						<div class="parent-icon"><i class="bx bx-cookie"></i></div>
-						<div class="menu-title">Thống kê sinh viên theo lớp sinh hoạt</div>
-					</router-link>
-				</li>
-				<li class="nav-item">
-					<router-link class="nav-link" to="/sinh-vien-theo-nam-nhap-hoc">
-						<div class="parent-icon"><i class="bx bx-cookie"></i></div>
-						<div class="menu-title">Thống kê sinh viên theo năm nhập học</div>
-					</router-link>
-				</li>
-			</ul>
-		</nav>
-	</div>
+        <div class="menu-content">
 
+            <!-- Logo -->
+            <router-link to="/" class="logo">
+                <img
+                    src="../../assets/images/logo-icon.png"
+                    class="logo-icon"
+                    alt="LootPlay"
+                >
+
+                <span class="logo-text">
+                    Loot<span>Play</span>
+                </span>
+            </router-link>
+
+            <!-- Menu -->
+            <nav class="menu-nav">
+
+                <router-link to="/" class="menu-item">
+                    TRANG CHỦ
+                </router-link>
+
+                <router-link to="/games" class="menu-item">
+                    GAMES
+                </router-link>
+
+                <router-link to="/software" class="menu-item">
+                    PHẦN MỀM
+                </router-link>
+
+                <router-link to="/forum" class="menu-item">
+                    DIỄN ĐÀN
+                </router-link>
+
+                <router-link to="/faq" class="menu-item">
+                    FAQS
+                </router-link>
+
+                <!-- Nút tìm kiếm -->
+                <button class="search-button">
+                    <i class="bx bx-search"></i>
+                </button>
+
+            </nav>
+
+        </div>
+
+    </div>
 </template>
+
 <script>
 export default {
-
 }
 </script>
-<style></style>
+
+<style scoped>
+
+.menu-container {
+    width: 100%;
+    background: white;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.menu-content {
+    width: 980px;
+    max-width: 90%;
+    height: 70px;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* LOGO */
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    text-decoration: none;
+}
+
+.logo-icon {
+    width: 35px;
+    height: 35px;
+    object-fit: contain;
+}
+
+.logo-text {
+    margin: 0;
+    font-size: 28px;
+    font-weight: 500;
+    color: #1677e8;
+}
+
+.logo-text span {
+    color: #7057d9;
+}
+
+/* MENU */
+
+.menu-nav {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+.menu-item {
+    color: #222;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 400;
+    transition: 0.2s;
+}
+
+.menu-item:hover {
+    color: #1677e8;
+}
+
+.router-link-active {
+    color: #1677e8;
+}
+
+/* SEARCH */
+
+.search-button {
+    width: 42px;
+    height: 42px;
+
+    border: none;
+    border-radius: 50%;
+
+    background: #1677e8;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+}
+
+.search-button i {
+    font-size: 20px;
+}
+
+</style>

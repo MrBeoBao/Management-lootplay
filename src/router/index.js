@@ -1,27 +1,25 @@
-import { createRouter, createWebHistory } from "vue-router"; // cài vue-router: npm install vue-router@next --save
+import { createRouter, createWebHistory } from 'vue-router'
+
+import Home from '../views/Home.vue'
+import Games from '../views/Games.vue'
+import GameDetail from '../views/GameDetail.vue'
+import Forum from '../views/Forum.vue'
+import Software from '../views/Software.vue'
+import Faq from '../views/Faq.vue'
 
 const routes = [
-    {
-        path: '/',
-        component: () => import('../components/SinhVienTheoKhoa/index.vue')
-    },
-    {
-        path: '/sinh-vien-theo-khoa',
-        component: () => import('../components/SinhVienTheoKhoa/index.vue')
-    },
-    {
-        path: '/sinh-vien-theo-lop-sinh-hoat',
-        component: () => import('../components/SinhVienTheoLopSinhHoat/index.vue')
-    },
-    {
-        path: '/sinh-vien-theo-nam-nhap-hoc',
-        component: () => import('../components/SinhVienTheoNamNhapHoc/index.vue')
-    },
+  { path: '/', name: 'Home', component: Home },
+  { path: '/games', name: 'Games', component: Games },
+  { path: '/game/:id', name: 'GameDetail', component: GameDetail },
+  { path: '/forum', name: 'Forum', component: Forum },
+  { path: '/software', name: 'Software', component: Software },
+  { path: '/faq', name: 'Faq', component: Faq },
+  { path: '/:pathMatch(.*)*', redirect: '/' }
 ]
 
 const router = createRouter({
-    history: createWebHistory(),
-    routes: routes
+  history: createWebHistory(),
+  routes
 })
 
 export default router

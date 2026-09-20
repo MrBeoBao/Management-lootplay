@@ -1,52 +1,76 @@
 <template>
-    <div class="wrapper">
-        <div class="header-wrapper">
-            <TopClient></TopClient>
-            <MenuClient></MenuClient>
-        </div>
-        <div class="page-wrapper">
-            <div class="page-content">
-                <router-view></router-view>
-            </div>
-        </div>
-        <div class="overlay toggle-icon"></div>
-        <a href="javaScript:;" class="back-to-top"><i class='bx bxs-up-arrow-alt'></i></a>
-        <BotClient></BotClient>
-    </div>
-</template>
-<script>
-import TopClient from "../components/TopClient.vue";
-import MenuClient from "../components/MenuClient.vue";
-import BotClient from "../components/BotClient.vue";
+  <div class="wrapper-shell">
+    <HeaderClient />
+    <MenuClient />
 
-import "../../assets/js/bootstrap.bundle.min.js";
-import "../../assets/js/jquery.min.js";
-import "../../assets/plugins/simplebar/js/simplebar.min.js";
-import "../../assets/plugins/metismenu/js/metisMenu.min.js";
-import "../../assets/plugins/perfect-scrollbar/js/perfect-scrollbar.js";
-import "../../assets/js/pace.min.js";
-import "../../assets/js/index.js";
-import "../../assets/js/app.js";
+    <main class="page-wrapper">
+      <div class="page-content">
+        <router-view />
+      </div>
+    </main>
+
+    <FooterClinet />
+  </div>
+</template>
+
+<script>
+import HeaderClient from '../components/HeaderClient.vue'
+import MenuClient from '../components/MenuClient.vue'
+import FooterClinet from '../components/FooterClinet.vue'
+
 export default {
-    components: {
-        TopClient,
-        BotClient,
-        MenuClient
-    }
+  components: {
+    HeaderClient,
+    MenuClient,
+    FooterClinet
+  }
 }
 </script>
+
 <style>
-@import "../../assets/plugins/vectormap/jquery-jvectormap-2.0.2.css";
-@import "../../assets/plugins/simplebar/css/simplebar.css";
-@import "../../assets/plugins/perfect-scrollbar/css/perfect-scrollbar.css";
-@import "../../assets/plugins/metismenu/css/metisMenu.min.css";
-@import "../../assets/css/pace.min.css";
 @import "../../assets/css/bootstrap.min.css";
 @import "../../assets/css/bootstrap-extended.css";
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
-@import "../../assets/css/app.css";
 @import "../../assets/css/icons.css";
-@import "../../assets/css/dark-theme.css";
-@import "../../assets/css/semi-dark.css";
+@import "../../assets/css/app.css";
 @import "../../assets/css/header-colors.css";
+
+:root {
+  --page-bg: #f5f7fb;
+  --card-bg: #ffffff;
+  --primary: #1677e8;
+  --text: #20242f;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body, #app {
+  margin: 0;
+  min-height: 100%;
+  height: 100%;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  background: var(--page-bg);
+  color: var(--text);
+}
+
+body {
+  min-height: 100vh;
+}
+
+.wrapper-shell {
+  min-height: 100vh;
+  background: var(--page-bg);
+}
+
+.page-wrapper {
+  min-height: 60vh;
+  padding: 32px 0 48px;
+}
+
+.page-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
 </style>
